@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
+@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
 :root {
   --black: #263238;
   --black-2: #000000;
@@ -44,6 +46,7 @@ aside {
 
 html,
 body {
+  font-family: "Europa", sans-serif;
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
@@ -100,4 +103,40 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: Gloss_And_Bloom;
+  font-display: swap;
+  src: url("../fonts/Gloss_And_Bloom.woff2") format("woff2"), url("../fonts/Gloss_And_Bloom.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.page__box {
+  margin: 0 auto;
+  max-width: 1108px;
+}
+@media screen and (max-width: 1107px) {
+  .page__box {
+    padding: 0 15px;
+  }
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+}
+
+.svg-logo-dims {
+  width: 137px;
+  height: 38px;
 }

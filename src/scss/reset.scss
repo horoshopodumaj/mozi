@@ -1,3 +1,7 @@
+@import url(//db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
+@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+
+$main-front: "Europa", sans-serif;
 :root {
     --black: #263238;
     --black-2: #000000;
@@ -43,7 +47,7 @@ aside {
 
 html,
 body {
-    //font-family: $main-front;
+    font-family: $main-front;
     scroll-behavior: smooth;
     height: 100%;
     width: 100%;
