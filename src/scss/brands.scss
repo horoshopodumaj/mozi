@@ -1,0 +1,84 @@
+.brands {
+    padding: 101px 0 128px 0;
+    @media screen and (max-width: 1100px) and (min-width: 768px) {
+        padding: 80px 0 110px 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 50px 0 80px 0;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 158%;
+        text-align: center;
+        font-weight: bold;
+        color: var(--title-color);
+        padding-bottom: 70px;
+        @media screen and (max-width: 800px) {
+            padding-bottom: 40px;
+            font-size: 28px;
+            line-height: 120%;
+        }
+
+        span {
+            color: var(--button);
+        }
+    }
+    &__dekoria {
+        display: block;
+        width: 100px;
+        height: 28px;
+    }
+    &__decathlon {
+        display: block;
+        width: 116px;
+        height: 28px;
+    }
+    &__dominos {
+        display: block;
+        width: 142px;
+        height: 28px;
+    }
+    &__heineken {
+        display: block;
+        width: 124px;
+        height: 28px;
+    }
+    &__toyota {
+        display: block;
+        width: 149px;
+        height: 26px;
+    }
+    &__reno {
+        display: block;
+        width: 118px;
+        height: 28px;
+    }
+    &__kfc {
+        display: block;
+        width: 68px;
+        height: 20px;
+    }
+
+    &__imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width: 1100px) and (min-width: 430px) {
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 429px) {
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        margin-top: 10px;
+        @media screen and (max-width: 1100px) {
+            flex: 0 0 30%;
+        }
+    }
+}

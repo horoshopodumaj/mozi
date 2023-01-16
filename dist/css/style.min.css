@@ -136,6 +136,11 @@ h6 {
   padding: 24px 0;
   position: relative;
 }
+.header__img {
+  display: block;
+  width: 136px;
+  height: 36px;
+}
 
 .navbar {
   display: flex;
@@ -218,7 +223,7 @@ h6 {
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 499px) and (min-width: 300px) {
+@media screen and (max-width: 499px) {
   .hero__content {
     margin-bottom: 250px;
     margin-top: 50px;
@@ -234,7 +239,7 @@ h6 {
   color: var(--title-color);
   padding-bottom: 32px;
 }
-@media screen and (max-width: 499px) and (min-width: 300px) {
+@media screen and (max-width: 499px) {
   .hero__title {
     font-size: 36px;
     padding-bottom: 26px;
@@ -246,7 +251,7 @@ h6 {
   color: var(--font-color);
   padding-bottom: 40px;
 }
-@media screen and (max-width: 499px) and (min-width: 300px) {
+@media screen and (max-width: 499px) {
   .hero__text {
     font-size: 18px;
     padding-bottom: 26px;
@@ -396,8 +401,101 @@ h6 {
   }
 }
 
+.brands {
+  padding: 101px 0 128px 0;
+}
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+  .brands {
+    padding: 80px 0 110px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .brands {
+    padding: 50px 0 80px 0;
+  }
+}
+.brands__title {
+  font-size: 36px;
+  line-height: 158%;
+  text-align: center;
+  font-weight: bold;
+  color: var(--title-color);
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 800px) {
+  .brands__title {
+    padding-bottom: 40px;
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+.brands__title span {
+  color: var(--button);
+}
+.brands__dekoria {
+  display: block;
+  width: 100px;
+  height: 28px;
+}
+.brands__decathlon {
+  display: block;
+  width: 116px;
+  height: 28px;
+}
+.brands__dominos {
+  display: block;
+  width: 142px;
+  height: 28px;
+}
+.brands__heineken {
+  display: block;
+  width: 124px;
+  height: 28px;
+}
+.brands__toyota {
+  display: block;
+  width: 149px;
+  height: 26px;
+}
+.brands__reno {
+  display: block;
+  width: 118px;
+  height: 28px;
+}
+.brands__kfc {
+  display: block;
+  width: 68px;
+  height: 20px;
+}
+.brands__imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+@media screen and (max-width: 1100px) and (min-width: 430px) {
+  .brands__imgs {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 429px) {
+  .brands__imgs {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+.brands__item {
+  margin-top: 10px;
+}
+@media screen and (max-width: 1100px) {
+  .brands__item {
+    flex: 0 0 30%;
+  }
+}
+
 .svg-logo-dims {
-  height: 38px;
+  height: 54px;
 }
 
 .svg-hero_home-dims {
@@ -416,9 +514,13 @@ h6 {
     height: 442px;
   }
 }
-@media screen and (max-width: 499px) and (min-width: 300px) {
+@media screen and (max-width: 499px) {
   .svg-hero_home-dims {
     max-width: 290px;
     height: 232px;
   }
+}
+
+.divider {
+  border-bottom: 1px solid rgba(197, 203, 226, 0.5);
 }

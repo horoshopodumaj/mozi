@@ -6,9 +6,10 @@
 @import "button";
 @import "hero";
 @import "burger-menu";
+@import "brands";
+
 .svg-logo-dims {
-    //width: 137px;
-    height: 38px;
+    height: 54px;
 }
 
 .svg-hero_home-dims {
@@ -22,8 +23,12 @@
         max-width: 490px;
         height: 442px;
     }
-    @media screen and (max-width: 499px) and (min-width: 300px) {
+    @media screen and (max-width: 499px) {
         max-width: 290px;
         height: 232px;
     }
+}
+
+.divider {
+    border-bottom: 1px solid rgba(197, 203, 226, 0.5);
 }
