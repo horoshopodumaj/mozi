@@ -14,6 +14,11 @@
     }
 
     &__button {
-        margin-left: 20px;
+        margin-left: 30px;
+    }
+}
+nav {
+    @media screen and (max-width: 665px) {
+        display: none;
     }
 }

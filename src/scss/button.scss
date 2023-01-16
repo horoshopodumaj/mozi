@@ -8,8 +8,8 @@
     line-height: 150%;
     font-weight: bold;
     &:hover {
-        color: var(--button);
-        background-color: var(--font-color2);
+        background-color: lighten($color: #bf0830, $amount: 10);
+        border: 1px solid lighten($color: #bf0830, $amount: 10);
         transition: 0.3s all ease;
     }
 

@@ -1,0 +1,103 @@
+.burger-menu {
+    @media screen and (max-width: 665px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: -100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--font-color2);
+        opacity: 0.99;
+        transition: left 200ms ease-in-out;
+        z-index: 100;
+        overflow: auto;
+
+        &__header {
+            position: relative;
+        }
+
+        &__open-btn {
+            padding: 0;
+            border: 0;
+            background-color: inherit;
+            position: absolute;
+            z-index: 99;
+            right: 0;
+
+            svg {
+                stroke: var(--black);
+            }
+        }
+
+        &__close-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            border: 0;
+            position: absolute;
+            background-color: var(--font-color2);
+            top: 2rem;
+            right: 0;
+
+            svg {
+                stroke: var(--black);
+            }
+        }
+        &[data-open] {
+            left: 0;
+        }
+
+        &__container {
+            padding: 0 16px;
+        }
+
+        &__menu {
+            width: 100%;
+            margin-top: 4.5rem;
+
+            a {
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                color: var(--black);
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--button);
+                    transition: 0.3s all ease;
+                }
+            }
+        }
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            font-family: "Inter", sans-serif;
+            font-size: 1.5rem;
+            line-height: 157%;
+        }
+
+        &__head {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            line-height: 157%;
+            font-weight: 400;
+            color: var(--black);
+        }
+
+        &__lang {
+            position: absolute;
+            top: 15px;
+            right: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 665px) {
+        display: none;
+
+        &__open-btn {
+            display: none;
+        }
+    }
+}

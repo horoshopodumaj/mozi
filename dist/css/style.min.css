@@ -9,6 +9,7 @@
   --font-color2: #ffffff;
   --arrow-act: #424b5a;
   --arrow-dis: #c2d1d9;
+  --black: #000;
 }
 
 * {
@@ -133,6 +134,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
+  position: relative;
 }
 
 .navbar {
@@ -150,7 +152,13 @@ h6 {
   transition: 0.3s all ease;
 }
 .navbar__button {
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 665px) {
+  nav {
+    display: none;
+  }
 }
 
 .button {
@@ -164,8 +172,8 @@ h6 {
   font-weight: bold;
 }
 .button:hover {
-  color: var(--button);
-  background-color: var(--font-color2);
+  background-color: #f00a3c;
+  border: 1px solid #f00a3c;
   transition: 0.3s all ease;
 }
 .button__outline {
@@ -208,6 +216,98 @@ h6 {
 .hero__buttons {
   display: flex;
   gap: 16px;
+}
+
+@media screen and (max-width: 665px) {
+  .burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--font-color2);
+    opacity: 0.99;
+    transition: left 200ms ease-in-out;
+    z-index: 100;
+    overflow: auto;
+  }
+  .burger-menu__header {
+    position: relative;
+  }
+  .burger-menu__open-btn {
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    position: absolute;
+    z-index: 99;
+    right: 0;
+  }
+  .burger-menu__open-btn svg {
+    stroke: var(--black);
+  }
+  .burger-menu__close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    background-color: var(--font-color2);
+    top: 2rem;
+    right: 0;
+  }
+  .burger-menu__close-btn svg {
+    stroke: var(--black);
+  }
+  .burger-menu[data-open] {
+    left: 0;
+  }
+  .burger-menu__container {
+    padding: 0 16px;
+  }
+  .burger-menu__menu {
+    width: 100%;
+    margin-top: 4.5rem;
+  }
+  .burger-menu__menu a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
+  }
+  .burger-menu__menu a:hover {
+    color: var(--button);
+    transition: 0.3s all ease;
+  }
+  .burger-menu__main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    line-height: 157%;
+  }
+  .burger-menu__head {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 157%;
+    font-weight: 400;
+    color: var(--black);
+  }
+  .burger-menu__lang {
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+  }
+}
+@media screen and (min-width: 665px) {
+  .burger-menu {
+    display: none;
+  }
+  .burger-menu__open-btn {
+    display: none;
+  }
 }
 
 .svg-logo-dims {
