@@ -3,7 +3,32 @@
     @@include('html/head.html', { "title": "Главная" })
     <body>
         <!-- @@include('html/footer.html', {}) -->
-        <div class="page">@@include('html/header.html', {})</div>
+        <div class="page">
+            <header class="header page__header">
+                @@include('html/header.html', {})
+                <div class="page__box">
+                    <section class="hero header__hero">
+                        <div class="hero__img">
+                            <img
+                                src="img/icons/icons.svg#hero_home"
+                                class="svg-hero_home-dims"
+                                alt="hero_home"
+                            />
+                        </div>
+
+                        <div class="hero__content">
+                            @@include('html/homeHero.html', {"title": " We build products to\
+                            simplify work for businesses", 'text': "Our next-gen products empower\
+                            businesses to implement agility and accelerate growth. "})
+                            <div class="hero__buttons">
+                                <button class="button">Learn more</button>
+                                <button class="button button__outline">Work with us</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </header>
+        </div>
         <script src="js/app.min.js"></script>
     </body>
 </html>

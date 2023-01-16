@@ -125,6 +125,9 @@ h6 {
   }
 }
 
+.header {
+  background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+}
 .header__box {
   display: flex;
   justify-content: space-between;
@@ -142,6 +145,10 @@ h6 {
   line-height: 100%;
   padding-left: 60px;
 }
+.navbar__link:hover {
+  color: var(--button);
+  transition: 0.3s all ease;
+}
 .navbar__button {
   margin-left: 20px;
 }
@@ -152,13 +159,62 @@ h6 {
   border: 1px solid var(--button);
   background-color: var(--button);
   color: var(--font-color2);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: bold;
 }
 .button:hover {
   color: var(--button);
   background-color: var(--font-color2);
+  transition: 0.3s all ease;
+}
+.button__outline {
+  color: var(--button);
+  background-color: var(--font-color2);
+}
+.button__outline:hover {
+  background-color: var(--button);
+  color: var(--font-color2);
+  transition: 0.3s all ease;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+}
+.hero__content {
+  width: 49%;
+  margin-top: 129px;
+  margin-bottom: 210px;
+}
+.hero__title {
+  font-size: 48px;
+  line-height: 129%;
+  font-weight: bold;
+  color: var(--title-color);
+  padding-bottom: 32px;
+}
+.hero__text {
+  font-size: 22px;
+  line-height: 150%;
+  color: var(--font-color);
+  padding-bottom: 40px;
+}
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: -152px;
+}
+.hero__buttons {
+  display: flex;
+  gap: 16px;
 }
 
 .svg-logo-dims {
-  width: 137px;
   height: 38px;
+}
+
+.svg-hero_home-dims {
+  max-width: 848px;
+  height: 642px;
 }

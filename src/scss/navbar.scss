@@ -7,6 +7,10 @@
         font-size: 18px;
         line-height: 100%;
         padding-left: 60px;
+        &:hover {
+            color: var(--button);
+            transition: 0.3s all ease;
+        }
     }
 
     &__button {

@@ -1,0 +1,33 @@
+.hero {
+    display: flex;
+    position: relative;
+    &__content {
+        width: 49%;
+        margin-top: 129px;
+        margin-bottom: 210px;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 129%;
+        font-weight: bold;
+        color: var(--title-color);
+        padding-bottom: 32px;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 150%;
+        color: var(--font-color);
+        padding-bottom: 40px;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: -152px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+    }
+}
