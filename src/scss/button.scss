@@ -20,6 +20,22 @@
             background-color: var(--button);
             color: var(--font-color2);
             transition: 0.3s all ease;
+            path {
+                stroke: var(--font-color2);
+                transition: 0.3s all ease;
+            }
         }
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.5;
+        font-weight: bold;
+        padding-left: 8px;
+    }
+
+    &__arrow {
+        stroke: var(--button);
     }
 }

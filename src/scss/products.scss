@@ -1,0 +1,27 @@
+.products {
+    padding: 106px 0 108px 0;
+    &__title {
+        font-size: 44px;
+        line-height: 130%;
+        font-weight: bold;
+        text-align: center;
+        color: var(--title-color);
+        padding-bottom: 16px;
+    }
+
+    &__subtitle {
+        line-height: 168%;
+        color: var(--font-color);
+        text-align: center;
+        padding-bottom: 97px;
+    }
+
+    &__content {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__card {
+        flex: 0 1 50%;
+    }
+}
