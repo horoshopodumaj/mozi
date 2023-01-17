@@ -11,7 +11,7 @@
 @import "card";
 @import "info";
 @import "innovation";
-
+@import "footer";
 .svg-logo-dims {
     height: 54px;
 }
@@ -35,4 +35,8 @@
 
 .divider {
     border-bottom: 1px solid rgba(197, 203, 226, 0.5);
+}
+
+body._lock {
+    overflow: hidden;
 }
