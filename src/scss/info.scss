@@ -13,6 +13,9 @@
     }
     &__item {
         flex: 0 1 50%;
+        @media screen and (max-width: 545px) {
+            text-align: center;
+        }
     }
     &__title {
         font-size: 44px;
@@ -59,5 +62,9 @@
             width: 100%;
             height: auto;
         }
+    }
+
+    &__button {
+        margin-top: 16px;
     }
 }

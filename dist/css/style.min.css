@@ -302,7 +302,7 @@ h6 {
     margin-left: -250px;
   }
 }
-@media screen and (max-width: 499px) and (min-width: 300px) {
+@media screen and (max-width: 499px) {
   .hero__img {
     right: 0px;
     left: 50%;
@@ -653,6 +653,11 @@ h6 {
 .info__item {
   flex: 0 1 50%;
 }
+@media screen and (max-width: 545px) {
+  .info__item {
+    text-align: center;
+  }
+}
 .info__title {
   font-size: 44px;
   line-height: 129%;
@@ -706,6 +711,9 @@ h6 {
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+.info__button {
+  margin-top: 16px;
 }
 
 .innovation {
