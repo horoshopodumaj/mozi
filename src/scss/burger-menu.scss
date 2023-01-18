@@ -6,7 +6,8 @@
         left: -100%;
         width: 100vw;
         height: 100vh;
-        background-color: var(--font-color2);
+        background-color: var(--footer-back);
+        color: var(--font-color2);
         opacity: 0.99;
         transition: left 200ms ease-in-out;
         z-index: 100;
@@ -36,9 +37,9 @@
             padding: 0;
             border: 0;
             position: absolute;
-            background-color: var(--font-color2);
-            top: 14px;
-            right: 0;
+            background-color: var(--footer-back);
+            top: 25px;
+            right: 1px;
 
             svg {
                 stroke: var(--button);
@@ -59,7 +60,7 @@
             a {
                 font-family: "Inter", sans-serif;
                 font-weight: 400;
-                color: var(--black);
+                color: var(--font-color2);
                 text-decoration: none;
 
                 &:hover {
@@ -74,8 +75,9 @@
             flex-direction: column;
             gap: 16px;
             font-family: "Inter", sans-serif;
-            font-size: 1.5rem;
+            font-size: 20px;
             line-height: 157%;
+            text-align: center;
         }
 
         &__head {
