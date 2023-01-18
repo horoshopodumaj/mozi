@@ -35,3 +35,24 @@ const swiper = new Swiper(".swiper", {
         },
     },
 });
+
+const NAVBAR_SCROLLED_CLASS = "navbar_scrolled";
+const navbarNode = document.querySelector(".navbar_sticky");
+const stickyStartScroll = 250;
+
+toggleBgNavbar();
+window.addEventListener("scroll", () => toggleBgNavbar());
+
+function toggleBgNavbar() {
+    if (
+        window.scrollY >= stickyStartScroll &&
+        !navbarNode.classList.contains(NAVBAR_SCROLLED_CLASS)
+    ) {
+        navbarNode.classList.add(NAVBAR_SCROLLED_CLASS);
+    } else if (
+        window.scrollY < stickyStartScroll &&
+        navbarNode.classList.contains(NAVBAR_SCROLLED_CLASS)
+    ) {
+        navbarNode.classList.remove(NAVBAR_SCROLLED_CLASS);
+    }
+}

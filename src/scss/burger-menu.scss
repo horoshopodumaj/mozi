@@ -1,5 +1,5 @@
 .burger-menu {
-    @media screen and (max-width: 665px) {
+    @media screen and (max-width: 742px) {
         position: fixed;
         top: 0;
         right: 0;
@@ -20,12 +20,12 @@
             padding: 0;
             border: 0;
             background-color: inherit;
-            position: absolute;
+            position: fixed;
             z-index: 99;
-            right: 0;
+            right: 16px;
 
             svg {
-                stroke: var(--black);
+                stroke: var(--button);
             }
         }
 
@@ -37,11 +37,11 @@
             border: 0;
             position: absolute;
             background-color: var(--font-color2);
-            top: 2rem;
+            top: 14px;
             right: 0;
 
             svg {
-                stroke: var(--black);
+                stroke: var(--button);
             }
         }
         &[data-open] {
@@ -93,7 +93,7 @@
         }
     }
 
-    @media screen and (min-width: 665px) {
+    @media screen and (min-width: 742px) {
         display: none;
 
         &__open-btn {

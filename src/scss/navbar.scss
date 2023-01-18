@@ -2,6 +2,14 @@
     display: flex;
     align-items: center;
 
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1108px;
+    }
+
     &__link {
         color: var(--nav-menu);
         font-size: 18px;
@@ -18,7 +26,24 @@
     }
 }
 nav {
-    @media screen and (max-width: 665px) {
+    @media screen and (max-width: 742px) {
         display: none;
     }
+}
+
+.navbar_sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+    z-index: 999;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @media screen and (max-width: 1147px) {
+        padding: 24px 15px;
+    }
+}
+
+.navbar_scrolled {
+    background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
 }
