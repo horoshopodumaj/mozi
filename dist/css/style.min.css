@@ -435,12 +435,18 @@ h6 {
     top: 15px;
     right: 1rem;
   }
+  .burger-menu__logo {
+    display: block;
+  }
 }
 @media screen and (min-width: 742px) {
   .burger-menu {
     display: none;
   }
   .burger-menu__open-btn {
+    display: none;
+  }
+  .burger-menu__logo {
     display: none;
   }
 }

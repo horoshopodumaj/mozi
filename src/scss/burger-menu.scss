@@ -93,12 +93,20 @@
             top: 15px;
             right: 1rem;
         }
+
+        &__logo {
+            display: block;
+        }
     }
 
     @media screen and (min-width: 742px) {
         display: none;
 
         &__open-btn {
+            display: none;
+        }
+
+        &__logo {
             display: none;
         }
     }
