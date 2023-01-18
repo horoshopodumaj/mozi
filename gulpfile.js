@@ -38,8 +38,8 @@ const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images)
 
 const dev = gulp.series(reset, svgSprive, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, svgSprive, mainTasks);
-const deployZIP = gulp.series(reset, mainTasks, zip);
-const deployFTP = gulp.series(reset, mainTasks, ftp);
+const deployZIP = gulp.series(reset, svgSprive, mainTasks, zip);
+const deployFTP = gulp.series(reset, svgSprive, mainTasks, ftp);
 
 export { dev };
 export { build };
